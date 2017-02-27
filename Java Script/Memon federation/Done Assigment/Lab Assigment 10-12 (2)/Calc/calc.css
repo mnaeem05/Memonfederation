@@ -1,0 +1,21 @@
+#box03{
+    color: maroon;
+    font-size: 20px;
+    font-family: sans-serif;
+    position: absolute;
+    left:   50px;
+    top: -2px;
+}
+#box01{
+    color: green;
+    font-size: 25px;
+}
+#box02{
+    color: blue;
+    font-size: 20px;
+}
+#box04{
+    position: absolute;
+    top: 40px;
+    left: 50px;
+}

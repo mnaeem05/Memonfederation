@@ -1,0 +1,27 @@
+#box01{
+    color: navy;
+    font-family: sans-serif;
+}
+
+#box02{
+        color: #117A65;
+        font-family: sans-serif;
+        font-weight: bold;
+        font-size: 25px;
+}
+#box03{
+        font-weight: bold;
+        font-size: 30px;
+        color: maroon;
+}
+#box04{
+        font-weight: bold;
+        font-size: 30px;
+        color: maroon;
+}
+#box05{
+        font-weight: bold;
+        font-size: 20px;
+        color: navy;
+        font-family: sans-serif;
+}

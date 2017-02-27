@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="input.css">
+</head>
+<body>
+    <script>
+    
+    //a=97,z=122,A=65,Z=90,0=48,9=57
+    var charNumber= prompt("Type any Number or Text");
+    var abc = charNumber.charCodeAt(0);
+    if(typeof charNumber === "number"){}
+    else if(abc >= 65 && abc <= 90 )
+document.write("<h1 id='box01'>Your Character is Upper Case</h1>");
+else if(abc >= 97 && abc <= 122 )
+document.write("<h1 id='box01'>Your Character is Lower Case</h1>");
+else if(abc >= 48 && abc <= 57 )
+document.write("<h1 id='box01'>Your Character is Number</h1>");
+
+
+
+    var integer1= prompt("Type any 1st Number");
+    var integer2= prompt("Type any 2nd Number");
+    if(integer1 === integer2){
+    document.write("<h1 id='box01'>Correct Answer "+integer1+" = "+integer2+"</h1>");
+}
+else  {
+    document.write("<h1 id='box01'>Wrong Answer "+integer1+" !== "+integer2+"</h1>");
+}
+
+
+var input1= +prompt("Type Any Number");
+if(input1 < 0 ){
+    document.write("<h1 id='box01'> Your Number is Negative </h1>");}
+if(input1 > 0 ){
+    document.write("<h1 id='box01'> Your Number is Possitive </h1>");
+}
+if(input1 === 0 ){
+    document.write("<h1 id='box01'> Your Number is Zero </h1>");
+}
+
+
+var input2= prompt("Type Any Alphabet");
+if(input2.length > 1){
+alert("You Only Type One Character")
+}
+else if(input2 === "a" || input2 ===  "e" ||  input2 === "i" ||input2 ===  "o" ||input2 ===  "u" || input2 === "A" || input2 === "E" || input2 === "I" || input2 === "O" || input2 === "U"){
+    document.write("<h1 id='box01'> Your Alphabet is a Vowel </h1>");
+}
+else {
+    document.write("<h1 id='box01'> Your Alphabet is Not a Vowel </h1>");
+}
+
+
+var pass1 = prompt("Type Your Password");
+var pass2 = prompt("Type Again Your Password");
+if(pass1 === pass2){
+    document.write("<h1 id='box01'> Correct! The password you entered matches the original password</h1>");
+}
+else if (pass1 !== pass2){
+document.write("<h1 id='box01'> Incorrect password </h1>");
+}
+
+var hour = 13; 
+if (hour < 18) {
+document.write("<h1 id='box01'> Good day </h1>");}
+else {
+document.write("<h1 id='box01'> Good Evening </h1>");
+}
+
+
+var time = +prompt("Type Any Number");
+if(time == 1900){
+    document.write("<h1 id='box01'>Good Morning</h1>");
+}
+else if(time >= 1200 && time < 1700){
+document.write("<h1 id='box01'> Good Afternoon</h1>");
+}
+else if(time >= 1700 && time < 2100){
+document.write("<h1 id='box01'> Good Evening</h1>");
+}
+else if(time >= 2100 && time < 2359){
+document.write("<h1 id='box01'> Good Night</h1>");
+}
+
+    </script>
+</body>
+</html>

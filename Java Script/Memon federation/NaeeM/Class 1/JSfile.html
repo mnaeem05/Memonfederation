@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <!--<h3>Hello JS</h3>-->
+<script>   
+
+    var x = 5
+    var y = 2
+    var a = 4
+    var b = 4
+    if(x === y || a === b){
+    document.write("<h1>Correct Answer "+x+" = "+y+"</h1>");
+}
+else  {
+    document.write("<h1>Wrong Answer "+x+" !== "+y+"</h1>");
+}
+
+var time = +prompt("Type Any Number");
+if(time == 1900){
+    document.write("<h1 id='box01'>Good Morning</h1>");
+}
+else if(time >= 1200 && time < 1700){
+document.write("<h1 id='box01'> Good Afternoon</h1>");
+}
+else if(time >= 1700 && time < 2100){
+document.write("<h1 id='box01'> Good Evening</h1>");
+}
+else if(time >= 2100 && time < 2359){
+document.write("<h1 id='box01'> Good Night</h1>");
+}
+else {
+    document.write("<h1 id='box01'> Wrong Time </h1>");
+}
+
+ </script>
+</body>
+</html>

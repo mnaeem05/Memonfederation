@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lab 18 Feb</title>
+    <link rel="stylesheet" href="class.css">
+
+</head>
+<body>
+    <script>
+    var today = new Date();
+    // document.write("<h1 id='box01'> "+today+" </h1>")
+    
+    var months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+    // var curMonth = months[today.getMonth()];
+    // document.write("<h1 id='box01'> Current Month: "+curMonth+" </h1>")
+
+
+    // var days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+    // var curWeekDay = days[today.getDay()];
+    // var newDay = curWeekDay.slice(0, 3);
+    // document.write("<h1 id='box01'> Today is  "+newDay+" </h1>")
+
+    // var ins1 = days[0]
+    // var ins2 = days[6]
+    // if(days[0] === ins1){
+    // document.write("<h1 id='box01'> It's Fun day </h1>")
+    // }
+    // else if(days[6] === ins2){
+    // document.write("<h1 id='box01'> It's Fun day </h1>")
+    // }
+
+    // var curDay = today
+    // var a =new Date(curDay.setDate(15))
+    // a.getDate()
+    // document.write("<h1 id='box01'> "+a.getDate()+" </h1>")
+    // if (a.getDate() < 16){
+    // document.write("<h1 id='box01'> First fifteen days of the month</h1>")
+    // }
+    // else if (a.getDate() < 31){
+    // document.write("<h1 id='box01'> Last days of the month </h1>")
+    // }
+
+    // document.write("<h1 id='box01'> Current Date: "+today+" </h1>")
+    // document.write("<h1 id='box01'> Elapsed milliseconds since January 1, 1970:  "+today.getTime()+" </h1>")
+    // var doomsday = new Date("January 1, 1970");
+    // var msToday = today.getTime();
+    // var msDoomsday = doomsday.getTime();
+    // var msDiff = msDoomsday - msToday;
+    // var dDiff = today.getTime() / (1000 * 60);
+    // document.write("<h1 id='box01'> Elapsed minutes since January 1, 1970: "+dDiff+" </h1>")
+
+    // var currentHours = today.getHours();
+    // document.write("<h1 id='box01'> Current Time: "+currentHours+" </h1>")
+    // var am = "AM"
+    // var pm = "PM"
+    // if (currentHours < 12){
+    //     document.write("<h1 id='box01'> It's "+am+" </h1>")
+    // }
+    // else if (currentHours >= 12){
+    //     document.write("<h1 id='box01'> It's "+pm+" </h1>")
+    // }
+
+    // var futureDate = new Date("Dec 31, 2020");
+    // document.write("<h1 id='box01'> Later Date: "+futureDate+" </h1>")
+
+    // Not Complete Qno 09
+    // var today = new Date();
+    // var RamadanDate = new Date("June 18, 2015");
+    // console.log(today.getDay())
+    // var remainingDate = today - RamadanDate
+    // document.write("<h1 id='box01'> "+remainingDate+" </h1>")
+
+
+
+    // var oldDate1 = new Date("January 01, 2015");
+    // var oldDate2 = new Date("December 05, 2015");
+    // var bb1 = oldDate1.getSeconds()
+    // var bb2 = oldDate2.getSeconds()
+    // document.write("<h1 id='box01'> On reference date: "+oldDate2+" </h1>")
+    // var diffAgain = bb2 - bb1
+    // document.write("<h1 id='box01'> "+diffAgain+" </h1>")
+
+    // var diffAgain = today.getTime() / (1000 * 60 * 60);
+    // document.write("<h1 id='box01'> "+diffAgain+" </h1>")
+    
+
+    // var userAge = +prompt("Please write your age.")
+    // document.write("<h1 id='box01'> Your age is "+userAge+" </h1>")
+    //  var currYr = today.getFullYear();
+    //  var finalYr = currYr - userAge
+    // document.write("<h1 id='box01'> Your birth year is "+finalYr+" </h1>")
+    
+
+    // document.write("<h1 id='box02'> K-Electric Bill </h1>")
+    // var customerName = ("M.Naeem")
+    // var curMonth = months[today.getMonth()];
+    // var numUnit = ("410")
+    // var charUnit = ("16")
+    // var netAmount = numUnit * charUnit
+    // var lateSurcharge = 350
+    // var grossAmount = netAmount + lateSurcharge 
+    // document.write("<h2 id='box01'> Customer Name: "+customerName+" </h2>")
+    // document.write("<h2 id='box01'> Current Month: "+curMonth+" </h2>")
+    // document.write("<h2 id='box01'> Number of units: "+numUnit+" </h2>")
+    // document.write("<h2 id='box01'> Charges per units: "+charUnit+" </h2>  <br>")
+    // document.write("<h2 id='box01'> Net Amount Payable (within Due Date): "+netAmount+" </h2>")
+    // document.write("<h2 id='box01'> Late Payment Surcharge: "+lateSurcharge+" </h2>")
+    // document.write("<h2 id='box01'> Gross Amount Payable (after Due Date): "+grossAmount+" </h2>")
+
+    // function dateTime() {
+    // document.write("<h1 id='box01'> "+today+" </h1>")
+    // }
+    // dateTime();
+
+
+    // function userName(){
+    //     var firstName = prompt("Write your first name.")
+    //     var lastName = prompt("Write your last name.")
+    //     var finalName = firstName +" "+ lastName
+    //     document.write("<h2 id='box01'> Your full name: "+finalName+" </h2>")
+
+    // }
+    // userName();
+
+    // function userNumber(){
+    //     var firstNumber = +prompt("Write any number.")
+    //     var lastNumber = +prompt("Write any second number.")
+    //     var finalNumber = firstNumber + lastNumber
+    //     document.write("<h2 id='box01'> Your first number: "+firstNumber+" </h2>")
+    //     document.write("<h2 id='box01'> Your second number: "+lastNumber+" </h2>")
+    //     document.write("<h2 id='box01'> Numbers after addition: "+finalNumber+" </h2>")
+    // }
+    // userNumber();
+
+    //     function userNumber(){
+    //     var num1 = +prompt("Write any number.")
+    //     var num2 = +prompt("Write any second number.")
+    //     var operator = prompt("Write any operator like.", "+, -, /, x")
+    //     if (operator === "+"){
+    //         var add = num1 + num2
+    //         document.write("<h2 id='box01'> Numbers after calculation: "+add+" </h2>")
+    //     }
+    //     else if(operator === "-"){
+    //         var add = num1 - num2
+    //         document.write("<h2 id='box01'> Numbers after calculation: "+add+" </h2>")
+    //     }
+    //     else if(operator === "/"){
+    //         var add = num1 / num2
+    //         document.write("<h2 id='box01'> Numbers after calculation: "+add+" </h2>")
+    //     }
+    //     else if(operator === "x" || "*"){
+    //         var add = num1 * num2
+    //         document.write("<h2 id='box01'> Numbers after calculation: "+add+" </h2>")
+    //     }
+    //     }
+    //     document.write("<h2 id='box01'> Basic Calculator </h2>")
+    // userNumber();
+
+
+//     function counting(){
+//         document.write("<h2 id='box01'> Counting: </h2>")
+//         var num1 = +prompt("Starting number.")
+//         var num2 = +prompt("Ending number.")
+//         for(i=num1; i <= num2; i++)
+//             document.write("<span id='box01'> "+i+",</span>")
+//     }    
+// counting();
+
+    function square(){
+        var num1 = +prompt("Enter width of square.")
+        var num2 = +prompt("Enter height of square.")
+        var final = num1 * num2
+        document.write("<h2 id='box01'> Area of rectangle: "+final+" </h2>")
+    }
+    square()
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>User Calculater</title>
+    <link rel="stylesheet" href="calc.css">
+    <script src="calc.js"> </script>
+</head>
+<body>
+    <h1 id="box03">Simple Calculater</h1>
+    <FORM name="calculator">
+<TABLE border="10" align="center" id="box04">
+<TR>
+<TD>
+<INPUT type="text"   name="Input" Size="20"  id="box02">
+<br>
+</TD>
+</TR>
+<TR>
+<TD>
+<INPUT type="button" name="one"   value="  1  " OnClick="calculator.Input.value += '1'" id="box01">
+<INPUT type="button" name="two"   value="  2  " OnCLick="calculator.Input.value += '2'" id="box01">
+<INPUT type="button" name="three" value="  3  " OnClick="calculator.Input.value += '3'" id="box01">
+<INPUT type="button" name="plus"  value="  +  " OnClick="calculator.Input.value += ' + '" id="box01">
+<br>
+<INPUT type="button" name="four"  value="  4  " OnClick="calculator.Input.value += '4'" id="box01">
+<INPUT type="button" name="five"  value="  5  " OnCLick="calculator.Input.value += '5'" id="box01">
+<INPUT type="button" name="six"   value="  6  " OnClick="calculator.Input.value += '6'" id="box01">
+<INPUT type="button" name="minus" value="  -  " OnClick="calculator.Input.value += ' - '" id="box01">
+<br>
+<INPUT type="button" name="seven" value="  7  " OnClick="calculator.Input.value += '7'" id="box01">
+<INPUT type="button" name="eight" value="  8  " OnCLick="calculator.Input.value += '8'" id="box01">
+<INPUT type="button" name="nine"  value="  9  " OnClick="calculator.Input.value += '9'" id="box01">
+<INPUT type="button" name="times" value="  x  " OnClick="calculator.Input.value += ' * '" id="box01">
+<br>
+<INPUT type="button" name="clear" value="  C  " OnClick="calculator.Input.value = ''" id="box01">
+<INPUT type="button" name="zero"  value="  0  " OnClick="calculator.Input.value += '0'" id="box01">
+<INPUT type="button" name="equal"  value="  =  " OnClick="calculator.Input.value = eval(calculator.Input.value)" id="box01">
+<INPUT type="button" name="div"   value="  /  " OnClick="calculator.Input.value += ' / '" id="box01">
+<br>
+</TD>
+</TR>
+</TABLE>
+</FORM>
+
+</body>
+</html>

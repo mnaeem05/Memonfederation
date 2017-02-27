@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>User Input</title>
+        <link rel="stylesheet" href="input.css">
+    
+</head>
+<body>
+    <script>
+    var cityName = prompt("Type Your City Name")
+    document.write("<h1 id='box01'> Welcome to the city of lights:  "+cityName+"  </h1>");
+
+ if (cityName === "Karachi") {
+ alert("Welcome to the city of lights");
+ }
+ else {
+ alert("Wrong City");
+ }
+
+
+ var cityName = prompt("Type Your City Name")
+   if  (cityName === "Karachi") {
+ document.write("<h1 id='box01'> Welcome to the city of lights:  "+cityName+"  </h1>");
+ }
+ else {
+ document.write("<h1 id='box01'> Wrong Answer  "+cityName+"  </h1>");
+ }
+
+var genderName = prompt("Type Your Gender")
+   if  (genderName === "Male") {
+ document.write("<h1 id='box01'> Good Morning Sir  </h1>");
+ }
+ else if  (genderName === "Female") {
+ document.write("<h1 id='box01'> Good Morning Ma'am </h1>");
+ }
+
+var signalColor1= prompt("Type color of road traffic signal")
+if  (signalColor1 === "Red") {
+document.write("<h1 id='box01'> Must Stop </h1>")
+ }
+else if  (signalColor1 === "Yellow") {
+ document.write("<h1 id='box01'> Ready to move </h1>")
+ }
+else if  (signalColor1 === "Green") {
+ document.write("<h1 id='box01'> Move Now </h1>")
+ }
+else {
+ document.write("<h1 id='box01'> Wrong Signal Color </h1>")
+ }
+
+var feul = prompt("Type Your Remaing Fuel", "Litres")
+   if  (feul === "0.24") {
+ document.write("<h1 id='box01'> Please refill the fuel in your car  </h1>");
+ }
+ else {
+ document.write("<h1 id='box01'> Your Fuel is Full </h1>");
+ }
+
+var Sub1= +prompt("Type any subject marks");
+if(Sub1 >= 80) {
+ document.write("<h1 id='box01'> A-one </h1>");
+ }
+else if(Sub1 >= 70) {
+ document.write("<h1 id='box01'> A </h1>")
+ }
+ else if(Sub1 >= 60) {
+ document.write("<h1 id='box01'> B </h1>")
+ }
+ else{
+ document.write("<h1 id='box01'> Fail</h1>")
+ }
+
+var totalMark=300
+var markObtained= +prompt("Type Your Marks");
+if(markObtained <= 300 ){
+    document.write("<h1 id='box01'> B </h1>");
+}
+else{
+ document.write("<h1 id='box01'> Fail</h1>")
+ }
+
+
+var secretNumber= +prompt("Type any Number");
+if(secretNumber === 5){
+    document.write("<h1 id='box01'> Bingo! Correct Answer  </h1>");
+}
+else if  (secretNumber + 1 === 5) {
+ document.write("<h1 id='box01'> Close enough to the correct answer</h1>")
+ }
+ else if  (secretNumber - 1 === 5) {
+ document.write("<h1 id='box01'> Close enough to the correct answer</h1>")
+ }
+else{
+ document.write("<h1 id='box01'> Oh Sorry</h1>")
+ }
+
+var checkWhether= +prompt("Type Current Whether");
+var remainder = checkWhether %  3;
+if(remainder  == 0){
+    document.write("<h1 id='box01'> "+remainder+"  </h1>");
+}
+else{
+ document.write("<h1 id='box01'> Sorry</h1>")
+ }
+
+var checkNumber= +prompt("Type Any Number");
+var evenodd = checkNumber % 2
+if(checkNumber == 0){
+    document.write("<h1 id='box01'> "+remainder+"  </h1>");
+}
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sample 1</title>
+        <link rel="stylesheet" href="sample.css">
+
+</head>
+<body>
+    
+    <script>
+   var studentNames = ["Ali", "Zeeshan", "Naeem", "Sherry"]; 
+   document.write("<h3 id='box01'> "+studentNames+" <font color='green'> => Complete Array </font> </h3>");
+
+
+
+studentNames.push("Sajid1", "Sajid2");
+document.write("<h3 id='box01'> "+studentNames+" <font color='green'> => Push Two Names (Ending) </font>  </h3>");
+
+
+studentNames.pop("Sajid2");
+document.write("<h3 id='box01'> "+studentNames+" <font color='green'> => Pop One Last Name (Ending)</font> </h3>");
+
+
+studentNames.unshift("Bilal1", "Bilal2");
+document.write("<h3 id='box01'> "+studentNames+" <font color='green'> => Unshift Two Names (Begining) </font> </h3>");
+
+studentNames.shift("Bilal1", "Bilal2");
+document.write("<h3 id='box01'> "+studentNames+" <font color='green'> => Shift One Name (Begining) </font>  </h3>");
+
+
+studentNames.splice(1, 0, "Raja1", "Raja2");
+document.write("<h3 id='box01'> "+studentNames+" <font color='green'> => Splice Two Names (Mid/Anywhere) </font>  </h3>");
+
+
+var newStudentNames = studentNames.slice(2, 6);
+document.write("<h3 id='box01'> "+newStudentNames+" <font color='green'> => Slice (Copy) in new array </font>  </h3>");
+
+    </script>
+
+<h3 id='box02'>Push = Add something in ending of array. Method = variablename.push("something");</h3>
+<h3 id='box02'>Pop = Remove something in ending of array. Method = variablename.pop("something");</h3>
+<h3 id='box02'>Unshift = Add something in starting of array. Method = variablename.unshift("something");</h3>
+<h3 id='box02'>Shift = Remove something in starting of array. Method = variablename.shift("something");</h3>
+<h3 id='box02'>Splice = Use the splice method to insert one or more elements anywhere in an array, while optionally removing one or more elements that come after it. Suppose you have an array with the elements "dog", "cat", "fly", "bug", "ox". The following code adds "pig", "duck", and "emu" after "cat" while removing "fly" and "bug" pets.splice(2, 2, "pig", "duck", "emu");</h3>
+<h3 id='box02'>Slice = Copy something in new array. Method = var newVariablename=variablename.slice(2, 6); </h3>
+
+
+</body>
+</html>

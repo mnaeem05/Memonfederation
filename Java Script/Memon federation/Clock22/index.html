@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Digital Clock</title>
+    <link rel="stylesheet" href="clock.css">
+</head>
+<body>
+    <script>
+function clock(){
+        var rightNow = new Date();
+        var currentSeconds = rightNow.getSeconds();
+        document.write("<h2 id='box01'> Seconds: "+currentSeconds+" </h2>");
+
+        var currentMills = rightNow.getMilliseconds();
+        document.write("<h2 id='box01'> Mili Seconds: "+currentMills+" </h2>");
+
+}
+for (i=0; i<1; i++){
+clock()
+}
+
+
+    </script>
+</body>
+</html>
