@@ -85,8 +85,6 @@ constructor(props) {
   }
 
   handleSubmit(event) {
-    console.log('User Name: ' + this.state.username);
-    console.log('User Password: ' + this.state.pwd);
     this.setState({username:''});
     this.setState({pwd:''});
     event.preventDefault();

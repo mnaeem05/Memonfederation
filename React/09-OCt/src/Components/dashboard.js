@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import {AppBar, Table, TableBody, TableHeader, TableHeaderColumn, TableRow, TableRowColumn} from 'material-ui/';
 import {Drawer, RaisedButton, IconMenu, MenuItem, IconButton} from 'material-ui/';
+import * as firebase from 'firebase';
+import CircularProgress from 'material-ui/CircularProgress';
 import MoreVertIcon from 'material-ui/svg-icons/navigation/more-vert';
 import Menu from 'material-ui/svg-icons/navigation/menu';
 import { Link } from 'react-router-dom';
@@ -68,7 +70,7 @@ const styles = {
 }
 
 export default class dashboard extends Component {
-
+ref = firebase.database().ref();
 constructor(props) {
     super(props);
     this.state = {
@@ -89,6 +91,13 @@ constructor(props) {
   }
    handleChangeUserPwd(event) {
     this.setState({pwd: event.target.value});
+  }
+
+    componentDidMount() {
+    this.ref.child("users").on("value", (snapshot) => {
+      let data = snapshot.val();
+      this.setState({ users: data });
+    })
   }
 
   handleSubmit(event) {
@@ -130,93 +139,38 @@ constructor(props) {
         <ul style={styles.box06}>
         <li>Insufficient sample – appropriate volume blood tubes are supplied with. Insufficient samples will mean an inability to test and delay in results and provision of blood products.</li>
         </ul>
-  <Table>
-    <TableHeader>
-      <TableRow>
-        <TableHeaderColumn>ID</TableHeaderColumn>
-        <TableHeaderColumn>Name</TableHeaderColumn>
-        <TableHeaderColumn>Status</TableHeaderColumn>
-      </TableRow>
-    </TableHeader>
-    <TableBody>
-      <TableRow>
-        <TableRowColumn>1</TableRowColumn>
-        <TableRowColumn style={{cursor: 'pointer'}}>M. Naeem</TableRowColumn>
-        <TableRowColumn>Job</TableRowColumn>
-      </TableRow>
-      <TableRow>
-        <TableRowColumn>2</TableRowColumn>
-        <TableRowColumn style={{cursor: 'pointer'}}>Naveed Patel</TableRowColumn>
-        <TableRowColumn>Business</TableRowColumn>
-      </TableRow>
-      <TableRow>
-        <TableRowColumn>3</TableRowColumn>
-        <TableRowColumn style={{cursor: 'pointer'}}>M. Saadiq</TableRowColumn>
-        <TableRowColumn>Business</TableRowColumn>
-      </TableRow>
-      <TableRow>
-        <TableRowColumn>4</TableRowColumn>
-        <TableRowColumn style={{cursor: 'pointer'}}>Mohsin</TableRowColumn>
-        <TableRowColumn>Teacher</TableRowColumn>
-      </TableRow>
-      <TableRow>
-        <TableRowColumn>5</TableRowColumn>
-        <TableRowColumn style={{cursor: 'pointer'}}>Tahir</TableRowColumn>
-        <TableRowColumn>Teacher</TableRowColumn>
-      </TableRow>
-      <TableRow>
-        <TableRowColumn>6</TableRowColumn>
-        <TableRowColumn style={{cursor: 'pointer'}}>Haseeb</TableRowColumn>
-        <TableRowColumn>Teacher</TableRowColumn>
-      </TableRow>
-      <TableRow>
-        <TableRowColumn>7</TableRowColumn>
-        <TableRowColumn style={{cursor: 'pointer'}}>Waleed</TableRowColumn>
-        <TableRowColumn>Job</TableRowColumn>
-      </TableRow>
-      <TableRow>
-        <TableRowColumn>8</TableRowColumn>
-        <TableRowColumn style={{cursor: 'pointer'}}>Owais</TableRowColumn>
-        <TableRowColumn>Job</TableRowColumn>
-      </TableRow>
-      <TableRow>
-        <TableRowColumn>9</TableRowColumn>
-        <TableRowColumn style={{cursor: 'pointer'}}>Sharjeel</TableRowColumn>
-        <TableRowColumn>Job</TableRowColumn>
-      </TableRow>
-      <TableRow>
-        <TableRowColumn>10</TableRowColumn>
-        <TableRowColumn style={{cursor: 'pointer'}}>Farhan</TableRowColumn>
-        <TableRowColumn>Job</TableRowColumn>
-      </TableRow>
-      <TableRow>
-        <TableRowColumn>11</TableRowColumn>
-        <TableRowColumn style={{cursor: 'pointer'}}>Hassan</TableRowColumn>
-        <TableRowColumn>Job</TableRowColumn>
-      </TableRow>
-      <TableRow>
-        <TableRowColumn>12</TableRowColumn>
-        <TableRowColumn style={{cursor: 'pointer'}}>Mubeen</TableRowColumn>
-        <TableRowColumn>Job</TableRowColumn>
-      </TableRow>
-      <TableRow>
-        <TableRowColumn>13</TableRowColumn>
-        <TableRowColumn style={{cursor: 'pointer'}}>Umar</TableRowColumn>
-        <TableRowColumn>Job</TableRowColumn>
-      </TableRow>
-      <TableRow>
-        <TableRowColumn>14</TableRowColumn>
-        <TableRowColumn style={{cursor: 'pointer'}}>Zeeshan</TableRowColumn>
-        <TableRowColumn>Job</TableRowColumn>
-      </TableRow>
-      <TableRow>
-        <TableRowColumn>15</TableRowColumn>
-        <TableRowColumn style={{cursor: 'pointer'}}>Bilal</TableRowColumn>
-        <TableRowColumn>Job</TableRowColumn>
-      </TableRow>
-    </TableBody>
-  </Table>
-         </div>
+  {this.state.users ?
+          <Table>
+            <TableHeader>
+              <TableRow>
+                <TableHeaderColumn>ID</TableHeaderColumn>
+                <TableHeaderColumn>Name</TableHeaderColumn>        
+                <TableHeaderColumn>Email</TableHeaderColumn>
+                <TableHeaderColumn>Age</TableHeaderColumn>
+                <TableHeaderColumn>Gender</TableHeaderColumn>
+              </TableRow>
+            </TableHeader>
+            <TableBody>
+              {
+                Object.keys(this.state.users).map((data, index) => {
+                  return (
+                    <TableRow>
+                      <TableRowColumn>{index + 1}</TableRowColumn>
+                      <TableRowColumn>{this.state.users[data].name} </TableRowColumn>
+                      <TableRowColumn>{this.state.users[data].email}</TableRowColumn>
+                      <TableRowColumn>{this.state.users[data].age}</TableRowColumn>
+                      <TableRowColumn>{this.state.users[data].gender} </TableRowColumn>
+                    </TableRow>
+                  );
+                })
+              }
+
+            </TableBody>
+          </Table>
+          :
+          <CircularProgress />
+        }
+      </div>
     )
   }
 }

@@ -62,7 +62,8 @@ export default class signup extends Component {
   }
 
   handleChangeMale(event){
-    this.setState({SelectedRadioButton: event.target.value},()=>{console.log(this.state.SelectedRadioButton)} )
+    this.setState({SelectedRadioButton: event.target.value})
+    // ,()=>{console.log(this.state.SelectedRadioButton)} 
     // console.log(this.state.SelectedRadioButton)
   }
 
