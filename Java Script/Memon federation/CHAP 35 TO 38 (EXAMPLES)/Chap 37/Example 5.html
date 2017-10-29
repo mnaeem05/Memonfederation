@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+     function Example5 () {
+         var ask = +prompt("Write your marks");
+         var a;
+         var b;
+         var c;
+         var d; 
+         if (ask >= 80){
+             a = ask;
+             return a;
+         }
+         else if(ask >= 70) {
+             b = ask;
+             return b;
+         }
+         else if (ask >= 60) {
+             c = ask;
+             return c;
+         }
+         else if (ask >= 50) {
+             d = ask;
+             return d;
+         }
+     }
+     var e = Example5();
+
+     var ask2 =  prompt("Your Name");
+     if (e >= 80) {
+         document.write("<h1> Result</h1> <p> Your name: " + ask2 + "<br />your grade is 'A+'<br /> your Result: " + e);
+     }
+    else if (e >= 70) {
+         document.write("<h1> Result</h1> <p> Your name: " + ask2 + "<br /> your grade is 'A'<br /> your Result: " + e);
+     }
+     else if (e >= 60) {
+         document.write("<h1> Result</h1> <p> Your name: " + ask2 + "<br /> your grade is 'B'<br /> your Result: " + e);
+     }
+     else if (e >= 50) {
+         document.write("<h1> Result</h1> <p> Your name: " + ask2 + "<br /> your grade is 'C'<br /> your Result: " + e);
+     }
+
+    </script>
+</body>
+</html>

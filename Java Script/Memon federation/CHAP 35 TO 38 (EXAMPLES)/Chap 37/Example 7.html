@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+      //* Book Example *//
+
+      unction calcTot(merchTot) {
+  var orderTot;
+  if (merchTot >= 100) {
+    orderTot = merchTot;
+  } else if (merchTot < 50.01) {
+    orderTot = merchTot + 5;
+  } else {
+    orderTot = merchTot + 5 + (.03 * (merchTot - 50));
+  }
+  return orderTot;
+}
+calcTot(+prompt("Please enter the total: "));
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lab Assignment 25 March</title>
+    <link rel="stylesheet" href="class.css">
+    <script src="javafile.js"></script>
+
+</head>
+<body>
+
+    
+        <form id="box01" onSubmit="Data()" method="post" action="javascript:void(0)">
+        <fieldset>
+            <legend>Student Detail</legend>
+            <label> Student Name: <br>
+<input id="box02" type="text" name="username" required onFocus="this.style.backgroundColor='lightgreen';" onBlur="this.style.backgroundColor='white';" /></label><br />
+<label>Roll No:<br />
+<input id="box03" type="text" name="rollnumber" required onFocus="this.style.backgroundColor='lightgreen';" onBlur="this.style.backgroundColor='white';" /></label><br />
+<label>Gender<br />
+Male  <input id="box04" type="radio" name="gender" value="Male" required/> </label>
+Female  <input id="box05" type="radio" name="gender" value="Female" required/> </label><br />
+<label>Email ID:<br />
+<input id="box06" type="email" name="email" required onFocus="this.style.backgroundColor='lightgreen';" onBlur="this.style.backgroundColor='white';" /></label><br />
+<label>Course:<br />
+<select name="select1" id="select2">
+<option id="box07" value="none">--Select--</option>
+<option id="box08" value="HTML">HTML</option>
+<option id="box09" value="CSS">CSS</option>
+<option id="box10" value="JavaScript">JavaScript</option>
+</select>
+<input id="button" type="submit" value="Save">
+        </fieldset>
+        </form>
+<div id="final"> </div>
+</body>
+</html>

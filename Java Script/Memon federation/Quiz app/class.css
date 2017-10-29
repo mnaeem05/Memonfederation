@@ -1,0 +1,48 @@
+#box01{
+    color: navy;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+#box02{
+        color: #117A65;
+        font-family: sans-serif;
+        font-size: 20px;
+        cursor: pointer;
+}
+#box03{
+        font-weight: bold;
+        font-size: 30px;
+        color: maroon;
+}
+#box04{
+        font-weight: bold;
+        font-size: 30px;
+        color: maroon;
+}
+#box05{
+        font-weight: bold;
+        font-size: 20px;
+        color: navy;
+        font-family: sans-serif;
+}
+
+#button6{
+    position: absolute;
+    top: 150px;
+    cursor: pointer;
+    left: 480px;
+    display: block;
+    height: 40px;
+    width: 60px;
+    background: #00b7ea;
+    /*TYPE*/
+  color: yellow;
+  font: 17px/40px Helvetica, Verdana, sans-serif;
+  text-decoration: none;
+  text-align: center;
+  font-weight: bold;
+  -webkit-border-radius: 10px;
+   -moz-border-radius: 10px;
+    border-radius: 10px;
+}

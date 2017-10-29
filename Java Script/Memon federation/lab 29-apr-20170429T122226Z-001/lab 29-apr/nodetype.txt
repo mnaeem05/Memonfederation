@@ -1,0 +1,8 @@
+nodetype=1,2,3.....1 for any tag,,,3 for any text, 2 for any attribute value
+nodename= is use for Tag name
+nodevalue= is use for any text in Tag
+
+hasAttribut is check for atribute exist or not true or false
+getAttribut is get attribute only from tag
+setAttribut is set any attribut with atribute name also like ("class" "one")
+removeAttribute is remove any attribute like remove class

@@ -1,0 +1,59 @@
+#box01{
+    color: #922B21;
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    position: absolute;
+    top: 20px;
+    left: 110px;
+}
+#box02{
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height: 20px;
+    width: 200px;
+}
+#box03{
+    position: absolute;
+    left: 460px;
+    top: 40px;
+    display: block;
+    height: 30px;
+    width: 80px;
+    background: limegreen;
+        /*TYPE*/
+  color: darkred;
+  cursor: pointer;
+  font: 20px/20px Helvetica, Verdana, sans-serif;
+  text-align: center;
+  font-weight: bold;
+    border-radius: 10px;
+
+}
+#final{
+    color: mediumvioletred;
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+    position: absolute;
+    top: 60px;
+    left: 110px;
+}
+
+#box05{
+    color: red;
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+}
+#box06{
+    width: 500px;
+    height: 250px;
+    position: absolute;
+    top: 20px;
+    left: 100px; 
+    background-color: #5499C7;
+    border: 1px solid #5499C7;
+    border-radius: 5px;
+}

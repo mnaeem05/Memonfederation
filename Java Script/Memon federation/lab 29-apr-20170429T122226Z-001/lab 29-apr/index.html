@@ -1,0 +1,28 @@
+<html lang="en"><head> <meta charset="UTF-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0"> <meta http-equiv="X-UA-Compatible" content="ie=edge"> <title>Document</title></head><body> <p id="box">Hello world 1</p><p>Hello world 2</p><p>Hello world 3</p>Email: <input type="text"><br><br>Password: <input type="password"></body>
+<style>
+
+    class{
+        color: red;
+        size:   15px;
+    }
+</style>
+
+<script>
+
+// var two = document.childNodes[0].childNodes[1].childNodes[1].getAttributes("id")
+// var two = document.getElementById("box")
+// var two2 = two.nextSibling;
+// alert(two2)
+
+// var one = document.getElementsByTagName("p")
+// alert(one[0].innerHTML)
+// alert(one[0].nodeType)
+// alert(one[0].nodeName)
+// alert(one[0].nodeValue)
+
+var nodeToAdd = document.createElement("p");
+nodeToAdd.setAttribute("class", "regular");
+var newTxt = nodeToAdd.createTextNode("Hello!");
+
+</script>
+</html>

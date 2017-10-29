@@ -1,0 +1,36 @@
+#box01{
+    color: navy;
+    font-family: sans-serif;
+    text-decoration: none;
+    font-size: 20px;
+    position: absolute;
+    left: 30px;
+}
+input{
+    font-family: sans-serif;
+    font-size: 20px;
+}
+#button{
+    position: absolute;
+    left: 130px;
+    top: 250px;
+    display: block;
+    height: 30px;
+    width: 80px;
+    background: #00b7ea;
+        /*TYPE*/
+  color: yellow;
+  font: 20px/20px Helvetica, Verdana, sans-serif;
+  text-align: center;
+  font-weight: bold;
+    border-radius: 10px;
+}
+#final{
+    position: absolute;
+    left: 50px;
+    top: 350px;
+    color: darkblue;
+    font-family: sans-serif;
+    text-decoration: none;
+    font-size: 20px;
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>React File</title>
+    <link rel="stylesheet" href="file.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.6.1/react.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.6.1/react-dom.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.26.0/babel.min.js"></script>
+</head>
+<body>
+    <div id="root"> </div>
+    <!--<script type="text/babel"> //  This is the one way to write react code without class or without any componnent
+    ReactDOM.render(<div> <h4>Hello World </h4> <br/> <p>Please write any thing</p> <input type="text" /> </div>, document.getElementById("root"))
+    </script>-->
+    <!--<input type"text">-->
+    
+    
+    <script type="text/babel">
+    class App extends React.Component{
+        render () {
+        return <div>
+                <h1> Hello World</h1>
+               <p>Please write any thing: <input type="text" placeholder="Your Name"/> </p>
+        <NewApp/>
+        </div>
+
+    }
+    }
+    class NewApp extends React.Component{
+        render () {
+        return <div>
+        <br />
+        <br />
+        <br />
+        <ol className="one1">
+        <li> List 1 </li>
+        <li> List 2 </li>
+        <li> List 3 </li>
+        <li> List 4 </li>
+        </ol>
+        </div>
+        }
+    }
+    ReactDOM.render(<App/>, document.getElementById("root"))
+    </script>
+</body>
+</html>

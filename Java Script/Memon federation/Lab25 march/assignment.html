@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+    .hide{
+        display:hidden;
+    }
+    </style>
+</head>
+<body>
+   
+        <form onsubmit="disp3(); return false">
+    User name: <input type="text" name="userName" id="userName" /></br></br>
+    Password: <input type="password" name="userPass" id="userPass" />
+    </br><input type="submit" value="Submit"/>
+    </form>
+    </div>
+    <table id="printForForm">
+
+    </table>
+    </br>
+
+
+    <!--<div>
+        <p id="printMore">Hello World, we are learning JavaScript <a href="" id="clickMore" onClick="disp2(); return false">More Info</a></p>
+    </div>-->
+    
+    <div>
+
+    </div>
+    
+
+</body>
+<script>
+//question 1 function
+function disp(){
+    //var inputList= document.getElementsByTagName("input");
+    var inputUser = document.getElementById("userName").value;
+    var inputPass = document.getElementById("userPass").value;
+    //alert(document.getElementById("printForForm").innerHTML);
+    document.getElementById("printForForm").innerHTML=inputUser+'</br>'+inputPass;
+}
+function disp2(){
+    document.getElementById("clickMore").innerHTML="";
+    document.getElementById("printMore").innerHTML+=" and we will soon be good Developers";
+}
+var idData=-1;
+function disp3(){
+    idData++;
+var inputUser = document.getElementById("userName").value;
+var inputPass = document.getElementById("userPass").value;
+alert(idData);
+ document.getElementById("printForForm").innerHTML+='<tr id="'+idData+'"><td>'+inputUser+'</td><td>'+inputPass+'</td><td><input type="button" value="delete" onClick="del('+idData+');"/></td></tr>';
+}
+function del(id1){
+    alert(id1);
+document.getElementById(id1).className="hide";
+}
+</script>
+</html>

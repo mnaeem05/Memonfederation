@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+                        //* Mini Calculator *//
+
+           function askUser() {
+               var ask = +prompt("your First number");
+               var ask2 = prompt("Your operator");
+               var ask3 = +prompt("Your Second number");
+
+               if (ask2 == "+") {
+                   document.write("Your First Number: " + ask + "<br /> Your Second Number: " + ask3 + "<br />Your operator: " + ask2 + "<br /> Result: " + (ask + ask3));
+               }
+
+               if (ask2 == "-") {
+                   document.write("Your First Number: " + ask + "<br /> Your Second Number: " + ask3 + "<br />Your operator: " + ask2 + "<br /> Result: " + (ask - ask3));
+               }
+
+               if (ask2 == "x") {
+                   document.write("Your First Number: " + ask + "<br /> Your Second Number: " + ask3 + "<br />Your operator: " + ask2 + "<br /> Result: " +(ask * ask3));
+               }
+
+               if (ask2 == "/") {
+                   document.write("Your First Number: " + ask + "<br /> Your Second Number: " + ask3 + "<br />Your operator: " + ask2 + "<br /> Result: " + (ask / ask3));
+               }
+
+               if (ask2 == "%") {
+                   document.write("Your First Number: " + ask + "<br /> Your Second Number: " + ask3 + "<br />Your operator: " + ask2 + "<br /> Result: " + (ask % ask3));
+               }
+           }
+askUser()
+
+
+
+    </script>
+</body>
+</html>

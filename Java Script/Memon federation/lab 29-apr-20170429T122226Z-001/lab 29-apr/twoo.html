@@ -1,0 +1,56 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<style>
+    .newDiv{
+        color: green;
+        size:   45px;
+        font-family: Courier New, Courier, monospace;
+        background-color: rosybrown;
+        cursor: pointer;
+
+    }
+    .updatedDiv{
+            background-color: rosybrown;
+                    color: green;
+    }
+</style>
+    <div id="mydata">
+    
+    </div>
+
+    <input type="button" value="Add Element" onclick="addEle()"/>
+    <input type="button" value="Add CSS" onclick="addCssToElement()"/>
+   
+</body>
+<script>
+    
+    function addEle(){
+        var mainDiv = document.getElementById("mydata");
+
+        var p = document.createElement("h2");
+        p.setAttribute("id","mydiv");
+        
+        var t = document.createTextNode("This is new Text");        
+        p.appendChild(t);
+
+        mainDiv.appendChild(p);
+    }
+    
+    function addCssToElement(){
+         var mainDiv = document.getElementById("mydiv");
+         mainDiv.setAttribute("class","newDiv", "updatedDiv");
+    }
+    
+
+
+
+</script>
+</script>    
+</body>
+</html>

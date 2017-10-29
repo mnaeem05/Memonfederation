@@ -1,0 +1,2 @@
+[0220/232355.331:ERROR:exception_snapshot_win.cc(87)] thread ID 1120 not found in process
+[0220/232355.331:WARNING:crash_report_exception_handler.cc(60)] ProcessSnapshotWin::Initialize failed

@@ -1,0 +1,373 @@
+#box01{
+    width: 1200px;
+    height: 60px;
+    position: absolute;
+    top: 30px;
+    left: 80px;
+    border-radius: 10px;
+    background-color: #3DAE38;
+    border: 1px solid #3DAE38;
+}
+#box02{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: whitesmoke;
+    position: absolute;
+    top: 25px;
+    left: 450px;
+    font-size: 30px;
+    cursor: pointer;
+}
+:hover#box02{ color: rebeccapurple;}
+
+.cam1{
+    position: absolute;
+    left: 150px;
+    top: 120px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.cam2{
+    position: absolute;
+    left: 400px;
+    top: 120px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.cam3{
+    position: absolute;
+    left: 650px;
+    top: 120px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.cam4{
+    position: absolute;
+    left: 900px;
+    top: 120px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.cam5{
+    position: absolute;
+    left: 150px;
+    top: 380px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.cam6{
+    position: absolute;
+    left: 400px;
+    top: 380px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.cam7{
+    position: absolute;
+    left: 650px;
+    top: 380px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.cam8{
+    position: absolute;
+    left: 900px;    
+    top: 380px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.cam9{
+    position: absolute;
+    left: 150px;    
+    top: 640px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.cam10{
+    position: absolute;
+    left: 400px;    
+    top: 640px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.cam11{
+    position: absolute;
+    left: 650px;    
+    top: 640px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.cam12{
+    position: absolute;
+    left: 900px;    
+    top: 640px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.cam1a{
+    position: absolute;
+    height: 20px;
+    width: 120px;
+    border-radius: 5px;
+    left: 150px;
+    top: 310px;
+    border: 2px solid darkgrey;
+    background-color: darkgrey;
+}
+.cam01a{
+    position: absolute;
+    left: 170px;
+    top: 285px;
+    cursor: pointer;
+    font-size: 20px;
+    font-family: sans-serif;
+    color: rebeccapurple;
+}
+.cam1b{
+    position: absolute;
+    height: 20px;
+    width: 120px;
+    border-radius: 5px;
+    left: 400px;
+    top: 310px;
+    border: 2px solid darkgrey;
+    background-color: darkgrey;
+}
+.cam01b{
+    position: absolute;
+    left: 410px;
+    top: 285px;
+    cursor: pointer;
+    font-size: 20px;
+    font-family: sans-serif;
+    color: rebeccapurple;
+}
+.cam1c{
+    position: absolute;
+    height: 20px;
+    width: 120px;
+    border-radius: 5px;
+    left: 650px;
+    top: 310px;
+    border: 2px solid darkgrey;
+    background-color: darkgrey;
+}
+.cam01c{
+    position: absolute;
+    left: 660px;
+    top: 285px;
+    cursor: pointer;
+    font-size: 20px;
+    font-family: sans-serif;
+    color: rebeccapurple;
+}
+.cam1d{
+    position: absolute;
+    height: 20px;
+    width: 120px;
+    border-radius: 5px;
+    left: 900px;
+    top: 310px;
+    border: 2px solid darkgrey;
+    background-color: darkgrey;
+}
+.cam01d{
+    position: absolute;
+    left: 910px;
+    top: 285px;
+    cursor: pointer;
+    font-size: 20px;
+    font-family: sans-serif;
+    color: rebeccapurple;
+}
+
+.cam1e{
+    position: absolute;
+    height: 20px;
+    width: 120px;
+    border-radius: 5px;
+    left: 150px;
+    top: 560px;
+    border: 2px solid darkgrey;
+    background-color: darkgrey;
+}
+.cam01e{
+    position: absolute;
+    left: 170px;
+    top: 535px;
+    cursor: pointer;
+    font-size: 20px;
+    font-family: sans-serif;
+    color: rebeccapurple;
+}
+.cam1f{
+    position: absolute;
+    height: 20px;
+    width: 120px;
+    border-radius: 5px;
+    left: 400px;
+    top: 560px;
+    border: 2px solid darkgrey;
+    background-color: darkgrey;
+}
+.cam01f{
+    position: absolute;
+    left: 410px;
+    top: 535px;
+    cursor: pointer;
+    font-size: 20px;
+    font-family: sans-serif;
+    color: rebeccapurple;
+}
+.cam1g{
+    position: absolute;
+    height: 20px;
+    width: 120px;
+    border-radius: 5px;
+    left: 650px;
+    top: 560px;
+    border: 2px solid darkgrey;
+    background-color: darkgrey;
+}
+.cam01g{
+    position: absolute;
+    left: 660px;
+    top: 535px;
+    cursor: pointer;
+    font-size: 20px;
+    font-family: sans-serif;
+    color: rebeccapurple;
+}
+.cam1h{
+    position: absolute;
+    height: 20px;
+    width: 120px;
+    border-radius: 5px;
+    left: 900px;
+    top: 560px;
+    border: 2px solid darkgrey;
+    background-color: darkgrey;
+}
+.cam01h{
+    position: absolute;
+    left: 910px;
+    top: 535px;
+    cursor: pointer;
+    font-size: 20px;
+    font-family: sans-serif;
+    color: rebeccapurple;
+}
+
+.cam1i{
+    position: absolute;
+    height: 20px;
+    width: 120px;
+    border-radius: 5px;
+    left: 150px;
+    top: 830px;
+    border: 2px solid darkgrey;
+    background-color: darkgrey;
+}
+.cam01i{
+    position: absolute;
+    left: 170px;
+    top: 805px;
+    cursor: pointer;
+    font-size: 20px;
+    font-family: sans-serif;
+    color: rebeccapurple;
+}
+.cam1j{
+    position: absolute;
+    height: 20px;
+    width: 120px;
+    border-radius: 5px;
+    left: 400px;
+    top: 830px;
+    border: 2px solid darkgrey;
+    background-color: darkgrey;
+}
+.cam01j{
+    position: absolute;
+    left: 410px;
+    top: 805px;
+    cursor: pointer;
+    font-size: 20px;
+    font-family: sans-serif;
+    color: rebeccapurple;
+}
+.cam1k{
+    position: absolute;
+    height: 20px;
+    width: 120px;
+    border-radius: 5px;
+    left: 650px;
+    top: 830px;
+    border: 2px solid darkgrey;
+    background-color: darkgrey;
+}
+.cam01k{
+    position: absolute;
+    left: 660px;
+    top: 805px;
+    cursor: pointer;
+    font-size: 20px;
+    font-family: sans-serif;
+    color: rebeccapurple;
+}
+.cam1l{
+    position: absolute;
+    height: 20px;
+    width: 120px;
+    border-radius: 5px;
+    left: 900px;
+    top: 830px;
+    border: 2px solid darkgrey;
+    background-color: darkgrey;
+}
+.cam01l{
+    position: absolute;
+    left: 910px;
+    top: 805px;
+    cursor: pointer;
+    font-size: 20px;
+    font-family: sans-serif;
+    color: rebeccapurple;
+}
+.button1 a{
+    position: absolute;
+    top: 125px;
+    left: 160px;
+    display: block;
+    height: 30px;
+    width: 30px;
+    background: #00b7ea;
+    /*TYPE*/
+  color: white;
+  font: 17px/30px Helvetica, Verdana, sans-serif;
+  text-decoration: none;
+  text-align: center;
+  font-weight: bold;
+  -webkit-border-radius: 10px;
+   -moz-border-radius: 10px;
+    border-radius: 10px;
+    transition: opacity .35s ease;
+}
+.button2 a{
+    position: absolute;
+    top: 125px;
+    left: 330px;
+    display: block;
+    height: 30px;
+    width: 30px;
+    background: #00b7ea;
+    /*TYPE*/
+  color: white;
+  font: 20px/30px Helvetica, Verdana, sans-serif;
+  text-decoration: none;
+  text-align: center;
+  font-weight: bold;
+  -webkit-border-radius: 10px;
+   -moz-border-radius: 10px;
+    border-radius: 10px;
+    transition: opacity .35s ease;
+}

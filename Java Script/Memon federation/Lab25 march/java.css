@@ -1,0 +1,72 @@
+#box01{
+    color: navy;
+    font-family: sans-serif;
+    font-size: 20px;
+}
+#box02{
+    color: green;
+    font-family: sans-serif;
+    font-size: 15px;
+}
+input{
+    font-family: sans-serif;
+    font-size: 20px;
+}
+#box03{
+    position: absolute;
+    left: 130px;
+    top: 60px;
+
+}
+#box04{
+    position: absolute;
+    left: 130px;
+}
+#box05{
+    position: absolute;
+    left: 130px;
+}
+#box06{
+    position: absolute;
+    left: 130px;
+}
+#box07{
+    position: absolute;
+    left: 130px;
+    top: 155px;
+    color: navy;
+    font-family: sans-serif;
+    font-size: 15px;
+}
+#box08{
+    position: absolute;
+    left: 200px;
+    top: 155px;
+    color: navy;
+    font-family: sans-serif;
+    font-size: 15px;
+}
+#button{
+    position: absolute;
+    left: 130px;
+    top: 400px;
+    display: block;
+    height: 30px;
+    width: 80px;
+    background: #00b7ea;
+        /*TYPE*/
+  color: yellow;
+  font: 20px/20px Helvetica, Verdana, sans-serif;
+  text-align: center;
+  font-weight: bold;
+  border-radius: 10px;
+}
+#final{
+    position: absolute;
+    left: 10px;
+    top: 450px;
+    color: darkblue;
+    font-family: sans-serif;
+    text-decoration: none;
+    font-size: 20px;
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+    function yourValue() {
+        var ask1 = +prompt("Your First Number?");
+        var ask2 = prompt("operaion (+ , - , x , /)");
+        var ask3 = +prompt("Second number?");
+
+        if (ask2 == "+") {
+            alert(ask1 + ask3);
+        }
+          else if (ask2 == "-") {
+            alert(ask1 - ask3);
+          }
+            else if (ask2 == "x") {
+            alert(ask1 * ask3); 
+            }
+
+    else if (ask2 == "/") {
+            alert(ask1 / ask3);
+          }
+
+        }
+
+        yourValue()
+    
+    </script>
+</body>
+</html>

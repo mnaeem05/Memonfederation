@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+     //* Your Operator *// 
+    function yourOperator() {
+        var a = 2;
+        var b = 4;
+        var c = prompt("Write your opeator");
+
+        if (c == "+") {
+            document.write("<p> First number is: " + a + "<br />Second number is: " + b + "<br /> Operator is: '" + c + "'<br /> Answer is: "  + (a + b) + "</p>");
+        }
+
+       if (c == "-") {
+            document.write("<p> First number is: " + a + "<br />Second number is: " + b + "<br /> Operator is: '" + c + "'<br /> Answer is: "  + (a - b) + "</p>");  
+    }
+     if (c == "x") {
+            document.write("<p> First number is: " + a + "<br />Second number is: " + b + "<br /> Operator is: '" + c + "'<br /> Answer is: "  + (a * b) + "</p>");
+     }
+
+      if (c == "/") {
+            document.write("<p> First number is: " + a + "<br />Second number is: " + b + "<br /> Operator is: '" + c + "'<br /> Answer is: "  + (a / b) + "</p>");
+    }
+    }
+    yourOperator();
+    </script>
+</body>
+</html>

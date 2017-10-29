@@ -1,0 +1,35 @@
+#box01{
+    color: navy;
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+}
+#box02{
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height: 20px;
+    width: 300px;
+}
+#box03{
+    position: absolute;
+    left: 480px;
+    top: 18px;
+    display: block;
+    height: 30px;
+    width: 80px;
+    background: limegreen;
+        /*TYPE*/
+  color: darkred;
+  cursor: pointer;
+  font: 20px/20px Helvetica, Verdana, sans-serif;
+  text-align: center;
+  font-weight: bold;
+    border-radius: 10px;
+
+}
+#final{
+    color: green;
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+}

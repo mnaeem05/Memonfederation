@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+              var yourNumber = +prompt("Wtite your weight");
+              var yourChoice = prompt("What dou you want (round , ceil or floor)");
+              yourChoice.toLowerCase();
+              if (yourChoice === "round") {
+                  document.write("</p> Orignal number: " + yourNumber + "</p><p> After Round: " + Math.round(yourNumber) + "</p>");
+}
+
+ else if (yourChoice === "ceil") {
+                  document.write("</p> Orignal number: " + yourNumber + "</p><p> After ceil: " + Math.ceil(yourNumber) + "</p>");
+}
+
+ else if (yourChoice === "floor") {
+                  document.write("</p> Orignal number: " + yourNumber + "</p><p> After floor: " + Math.floor(yourNumber) + "</p>");
+}
+
+
+    </script>
+</body>
+</html>
